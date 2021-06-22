@@ -1,0 +1,21 @@
+<nz-header>
+  <h2 class="text-white">{{sourceName}}</h2>
+  <input #searchin  type="text" class="form-control" (keyup)="search(searchin.value)" placeholder="search">
+</nz-header>
+    <nz-content>
+      <div class="inner-content py-3">
+        <app-drawer ></app-drawer>
+
+        <div class="row">
+          <div class="col-md-4 mb-3" *ngFor="let article of news index as i">
+            <div class="card" >
+              <img [src]="!!article.urlToImage?article.urlToImage:defaultImg" class="card-img-top" alt="news">
+              <div class="card-body">
+                <h5 class="card-title text-center">{{article.title}}</h5>
+                <button (click)="showArticle(i)" class="btn btn-primary">read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nz-content>

@@ -1,20 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-.card{
-  height: 100%;
-}
-.card .card-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 nz-header {
   background: #fff;
-  padding: 16px;
-  text-transform: capitalize;
+  padding: 0;
 }
 
 nz-content {
-  margin: 64px 16px 0;
+  margin: 24px 16px 0;
 }
 
 .inner-content {
@@ -33,7 +23,6 @@ img{
   white-space: pre-wrap!important;
   text-overflow: unset!important;
   padding: 16px 0;
-  text-align: center;
 }
 :host ::ng-deep .ant-card-meta{
   height: 100%;

@@ -1,0 +1,20 @@
+.title{
+  font-size: 24px;
+}
+
+.description{
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.source{
+  font-size: 18px;
+}
+.jumbotron{
+  width: 75%;
+  margin: auto;
+}
+img{
+  width: 100%;
+  max-height: 300px;
+}

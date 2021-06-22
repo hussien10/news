@@ -1,0 +1,22 @@
+
+<button class="mb-3 text-primary border-0" nz-button  (click)="open() ">Filter<fa-icon [icon]="faFilter" class="me-3"></fa-icon>
+</button>
+<nz-drawer [nzClosable]="true" [nzVisible]="visible" [nzPlacement]="placement"  (nzOnClose)="close()">
+  <ng-container *nzDrawerContent>
+    <div class="my-3">
+      <h4>Filter By Sources</h4>
+    <div class="sources">
+      <ul nz-menu>
+        <li nz-menu nzTitle="Filter By Sources">
+          <ul>
+            <li (click)="sendSource(source.id)" *ngFor="let source of sources" class=" border border-bottom-0 text-capitalize my-0" nz-menu-item>{{source.id}}</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="date">
+      <nz-range-picker (ngModelChange)="onChange($event)" [nzSize]="size" [(ngModel)]="date" 	></nz-range-picker>
+    </div> -->
+    </div>
+  </ng-container>
+</nz-drawer>

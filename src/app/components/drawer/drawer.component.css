@@ -1,0 +1,9 @@
+.sources{
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-bottom: 32px;
+}
+nz-date-picker,
+nz-range-picker {
+  margin: 0 8px 12px 0;
+}
